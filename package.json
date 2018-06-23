@@ -1,6 +1,6 @@
 {
   "name": "ping-bot",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Bot that pings people back if they are abusing discord mentions!",
   "main": "index.js",
   "scripts": {
