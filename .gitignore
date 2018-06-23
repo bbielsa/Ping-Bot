@@ -1,3 +1,6 @@
+# Sublime files
+*.sublime-workspace
+
 # Secrets
 config/production.json
 config/debug.json
