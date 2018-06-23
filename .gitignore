@@ -3,7 +3,7 @@
 
 # Secrets
 config/production.json
-config/debug.json
+config/development.json
 
 # Logs
 logs
