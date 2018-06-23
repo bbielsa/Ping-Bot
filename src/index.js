@@ -1,16 +1,10 @@
 const DiscordClient = require('discord.js').Client
 const config = require('config')
+const SpamDetector = require('./spamdetector').SpamDetector
 
 
 const clientSecret = config.get('token')
 const client = new DiscordClient()
-
-client.on('ready', () => {
-    console.log('Im ready Im ready')
-})
-
-client.on('message', message => {
-    console.log(message)
-})
+const spamDetector = new SpamDetector(client)
 
 client.login(clientSecret)
