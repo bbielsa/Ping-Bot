@@ -4,7 +4,7 @@
   "description": "Bot that pings people back if they are abusing discord mentions!",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node src/index.js"
   },
   "author": "Brandon",
   "license": "MIT",
