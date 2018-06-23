@@ -1,5 +1,6 @@
-# Secret
+# Secrets
 config/production.json
+config/debug.json
 
 # Logs
 logs
