@@ -1,3 +1,4 @@
 {
-    "token": "your bot token here"
+    "token": "your bot token here",
+    "pingLimitPerMinute": 5
 }

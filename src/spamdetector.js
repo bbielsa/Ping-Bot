@@ -1,5 +1,7 @@
 const RateLimiter = require('limiter').RateLimiter
 const EventEmitter = require('events')
+const config = require('config')
+
 
 class SpamDetector extends EventEmitter {
 
@@ -19,7 +21,9 @@ class SpamDetector extends EventEmitter {
             return this.limiters[id]
         }
         else {
-            const limiter = new RateLimiter(3, 'minute', true)
+            const maxPings = config.get('pingLimitPerMinute')
+            const limiter = new RateLimiter(maxPings, 'minute', true)
+
             this.limiters[id] = limiter
 
             return limiter
